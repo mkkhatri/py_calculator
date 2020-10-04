@@ -13,6 +13,5 @@ window.move(600, 15)
 helloMsg = QLabel('This is Test', parent=window)
 helloMsg.move(60, 30)
 
-window.show()
 
 sys.exit(app.exec_())
