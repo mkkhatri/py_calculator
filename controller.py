@@ -9,6 +9,11 @@ class Controller:
         # Connect signals and slots
         self._connectSignals()
 
+    def _calculateResult(self):
+        """Evaluate expressions."""
+        result = self._evaluate(expression=self._view.getDisplayText())
+        self._view.setDisplayText(result)
+
     def _buildExpression(self, sub_exp):
         """Build expression."""
         if self._view.getDisplayText() == ERROR_MSG:
